@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jspPortfolio", "jspPortfolio\jspPortfolio.csproj", "{657133E1-B89E-4D6C-B320-647C42374B01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{657133E1-B89E-4D6C-B320-647C42374B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657133E1-B89E-4D6C-B320-647C42374B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657133E1-B89E-4D6C-B320-647C42374B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657133E1-B89E-4D6C-B320-647C42374B01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32CFD231-C240-4CD0-9FC8-6F11AA2A07B8}
+	EndGlobalSection
+EndGlobal
