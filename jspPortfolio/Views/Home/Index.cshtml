@@ -53,7 +53,7 @@
             <div class="col-md-8 ml-auto mr-auto">
                 <div class="brand text-center">
                     <h1 class="doIt">Code... Developed.</h1>
-                    <h3 class="title text-center">HTML5, CSS3, Vanilla JS, C#, Python, LUA</h3>
+                    <h3 class="title text-center">Let's Build Something Together!</h3>
                 </div>
             </div>
         </div>
@@ -72,7 +72,14 @@
                 Games and playing instruments. I was brought up in church where I learned to play all the modern stage instruments (drums, piano, bass, etc.).
                 I also enjoy golf, even though I haven't been able to play in years.
             </h5>
-            <hr />
+        </div>
+        <div class="row justify-content-center">
+            <img src="https://img.icons8.com/color/120/000000/html-5.png">
+            <img src="https://img.icons8.com/nolan/120/js.png">
+            <img src="https://img.icons8.com/color/120/000000/python.png">
+            <img src="https://img.icons8.com/nolan/120/cs.png">
+            <img src="https://img.icons8.com/color/120/000000/css3.png">
+            <img src="https://img.icons8.com/nolan/120/asp.png">
         </div>
         <div class="section text-center">
             <h2 class="title">Portfolio</h2>
@@ -164,6 +171,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- modals -->
 
@@ -383,10 +391,12 @@ function palin() {
     var inputTest = drome.value;
     var removeSpace = inputTest.replace(/\s/g, '');
     var removeCase = removeSpace.toLowerCase();
-    var toArray = removeCase.split("");
-    var word = toArray.reverse();
-    if (word.join("") === removeCase) {
-        return palAnswer.innerHTML = "Yes! You have found a palindrome. Congratulations!";
+    var newStr = [];
+    for (var i = removeCase.length - 1; i >= 0; i--) {
+        newStr += removeCase[i];
+    }
+    if (removeCase === newStr) {
+        return palAnswer.innerHTML = "Yes! You've found a palindrome. Congratulations!";
     } else {
         return palAnswer.innerHTML = "Nope. Not a palindrome. Sorry. :(";
     }
