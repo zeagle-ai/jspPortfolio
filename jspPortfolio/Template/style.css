@@ -12,6 +12,10 @@
             animation: wowzers 40s linear infinite;
 }
 
+.buffMore {
+    padding-right: 20px;
+}
+
 @keyframes wowzers {
     0% {
         letter-spacing: 2px;
