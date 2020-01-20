@@ -12,6 +12,10 @@
             animation: wowzers 40s linear infinite;
 }
 
+.spacit {
+    letter-spacing: 2px;
+}
+
 .buffMore {
     padding-right: 20px;
 }

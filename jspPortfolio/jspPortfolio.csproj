@@ -199,7 +199,7 @@
     <Content Include="Template\assets\js\plugins\moment.min.js" />
     <Content Include="Template\assets\js\plugins\nouislider.min.js" />
     <Content Include="Template\assets\js\prism.js" />
-    <Content Include="Template\style.css" />
+    <Content Include="Template\assets\css\style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
