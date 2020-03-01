@@ -26,5 +26,10 @@ namespace jspPortfolio.Controllers
 
             return View();
         }
+
+        public ActionResult ComingSoon()
+        {
+            return View();
+        }
     }
 }

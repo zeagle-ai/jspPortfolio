@@ -1,7 +1,4 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-
+﻿
 <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100">
     <div class="container">
         <div class="navbar-translate">
@@ -21,22 +18,22 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <div class="row">
-                        <a href="#" class="nav-link">
+                        <a href="https://zergtrack.azurewebsites.net/" class="nav-link">
                             <i class="material-icons">bug_report</i> Bug Tracking System
                         </a>
-                        <a href="#" class="nav-link">
+                        <a href="@Url.Action("ComingSoon", "Home")" class="nav-link">
                             <i class="material-icons">attach_money</i> Financial Portal
                         </a>
-                        <a href="#" class="nav-link">
+                        <a href="@Url.Action("ComingSoon", "Home")" class="nav-link">
                             <i class="material-icons">link</i> Financial API
                         </a>
-                        <a href="#" class="nav-link">
+                        <a href="@Url.Action("ComingSoon", "Home")" class="nav-link">
                             <i class="material-icons">hearing</i> Opus Blog
                         </a>
-                        <a href="#" class="nav-link">
+                        <a href="https://zergtrack.azurewebsites.net/Home/Contact" class="nav-link">
                             <i class="material-icons">contact_mail</i> Contact
                         </a>
-                        <a href="#" class="nav-link">
+                        <a href="~/Template/assets/jspResume.pdf" class="nav-link">
                             <i class="material-icons">work</i> Resume
                         </a>
                     </div>
@@ -66,11 +63,12 @@
             <h2 class="title">About</h2>
             <hr />
             <h5>
-                I am a <span id="birth"></span> year old Father of four boys, husband to a beautiful nurse for
-                <script>document.write(parseInt(new Date().getFullYear()) - 2015)</script> years.
-                I enjoy problem solving, especially when it comes to coding. When I'm not solving problems or enjoying time with my family, I enjoy space related Video
-                Games and playing instruments. I was brought up in church where I learned to play all the modern stage instruments (drums, piano, bass, etc.).
-                I also enjoy golf, even though I haven't been able to play in years.
+                Welcome! My name is Joshua Patterson and I am a developer from Lexington, NC. I earned
+                my Associate's Degree in Nursing in 2010 from Richmond Community College. Computer Software Design and Development has
+                always been a passion of mine. I made the decision a few years ago to start a business to find clients to build/improve
+                their web presence. After having a measure of success, I made a complete career change. I've had the pleasure and challenge of
+                learning multiple technologies when working with different clients and at Coder Foundry, including: .Net MVC, C#, SQL, LINQ, Python,
+                AJAX, JQuery, ES6/JS, JSON, Angular 2, MongoDB, NODE JS, NPM and more! I would love to talk to you about your development needs!
             </h5>
         </div>
         <div class="row justify-content-center">
@@ -80,94 +78,94 @@
             <img src="https://img.icons8.com/nolan/120/cs.png">
             <img src="https://img.icons8.com/color/120/000000/css3.png">
             <img src="https://img.icons8.com/nolan/120/asp.png">
+            <img src="https://img.icons8.com/color/120/000000/angularjs.png">
         </div>
+
         <div class="section text-center">
-            <h2 class="title">Portfolio</h2>
-            <h3 class="title">Vanilla JS</h3>
+            <h2 class="title">Bug Tracker</h2>
             <hr />
+            <div class="col-12">
+                <a href="https://zergtrack.azurewebsites.net/">
+                    <img src="~/Template/assets/img/Zerg-Landing.png" class="img-fluid" />
+                </a>
+                <div class="description" style="padding-top: 20px">
+                    Click <a href="https://zergtrack.azurewebsites.net/">here</a> to access my issue tracking software. It is a .NET Entity framework project that I created in 4 weeks. It's a 0.2 version
+                    but has a lot of unique features included. Check it out now!
+                </div>
+            </div>
         </div>
-        <a data-toggle="modal" data-target="#arith" style="cursor: pointer">
-            <div class="row prettyBottom border rounded">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <img src="~/Template/assets/img/puma_laptop.jpg" class="img-fluid">
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <h2>Basic Math Functions using Vanilla JS</h2>
-                    <h4>This basic project contains 5 inputs. It computes several different math functions depending on which button you press. You can enter 5 numbers or less. You cannot enter a letter.</h4>
-                    <h4>Click anywhere in this area to see a pop up of the project.</h4>
-                </div>
-            </div>
-        </a>
-        <a data-toggle="modal" data-target="#factor" style="cursor: pointer">
-            <div class="row prettyBottom border rounded">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <h2>Find the Factorial</h2>
-                    <h4>
-                        The factorial of a positive integer is the product of all positive integers less than or equal to the input. Click somewhere in this area and input a positive integer into the field
-                        and press the Factorial button to get an answer. You may not input a negative or a non-integer.
-                    </h4>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <img src="~/Template/assets/img/code_laptop.jpg" class="img-fluid">
-                </div>
-            </div>
-        </a>
-        <a data-toggle="modal" data-target="#fizzBuzz" style="cursor: pointer">
-            <div class="row prettyBottom border rounded">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <img src="~/Template/assets/img/laptop.jpg" class="img-fluid">
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <h2>FizzBuzz</h2>
-                    <h4>
-                        The Classic FizzBuzz program. This program accepts two numerical inputs. It then iterates from one to one hundred and attempts to divide each input and both inputs into each iteration.
-                        If it is evenly divisible by both inputs, it outputs a "FizzBuzz." If it is evenly divisible by the first input, it outputs a Fizz, and a Buzz for the second. Click somewhere in this area to give it a try!
-                    </h4>
-                </div>
-            </div>
-        </a>
-        <a data-toggle="modal" data-target="#palin" style="cursor: pointer">
-            <div class="row prettyBottom border rounded">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <h2>Palindrome?</h2>
-                    <h4>
-                        A palindrome is a word or phrase that is spelled the same way fowards or backwards. Race Car is an example of a palindrome. Type in any phrase or word and see if it is a palindrome. You can type
-                        in any combination of capital letters with or without spaces. Click around here and give it a try.
-                    </h4>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <img src="~/Template/assets/img/glasses_comp.jpg" class="img-fluid">
-                </div>
-            </div>
-        </a>
-        <a data-toggle="modal" data-target="#sumOfAllFears" style="cursor: pointer">
-            <div class="row prettyBottom border rounded">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <img src="~/Template/assets/img/typing.jpg" class="img-fluid">
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                    <h2>Sum of All Fears</h2>
-                    <h4>
-                        The sum of all fears is a JS math exercise where you input several numbers into a list. Each number is labeled A through D, except the last number (k). This program evaluates all pairs
-                        of numbers in the list, checking to see if any two numbers add up to the input k. Click anywhere in this area to try it.
-                    </h4>
-                </div>
-            </div>
-        </a>
-        <hr />
+
         <div class="section text-center">
-            <h2 class="title">Contact Me</h2>
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <h2 class="title">JavaScript</h2>
+            <hr />
+            <a data-toggle="modal" data-target="#arith" style="cursor: pointer">
+                <div class="row prettyBottom border rounded">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <img src="~/Template/assets/img/puma_laptop.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h2>Basic Math Functions using Vanilla JS</h2>
+                        <h4>This basic project contains 5 inputs. It computes several different math functions depending on which button you press. You can enter 5 numbers or less. You cannot enter a letter.</h4>
+                        <h4>Click anywhere in this area to see a pop up of the project.</h4>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </a>
+            <a data-toggle="modal" data-target="#factor" style="cursor: pointer">
+                <div class="row prettyBottom border rounded">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h2>Find the Factorial</h2>
+                        <h4>
+                            The factorial of a positive integer is the product of all positive integers less than or equal to the input. Click somewhere in this area and input a positive integer into the field
+                            and press the Factorial button to get an answer. You may not input a negative or a non-integer.
+                        </h4>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <img src="~/Template/assets/img/code_laptop.jpg" class="img-fluid">
+                    </div>
                 </div>
-                <button class="btn btn-primary float-right">Send</button>
-            </form>
+            </a>
+            <a data-toggle="modal" data-target="#fizzBuzz" style="cursor: pointer">
+                <div class="row prettyBottom border rounded">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <img src="~/Template/assets/img/laptop.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h2>FizzBuzz</h2>
+                        <h4>
+                            The Classic FizzBuzz program. This program accepts two numerical inputs. It then iterates from one to one hundred and attempts to divide each input and both inputs into each iteration.
+                            If it is evenly divisible by both inputs, it outputs a "FizzBuzz." If it is evenly divisible by the first input, it outputs a Fizz, and a Buzz for the second. Click somewhere in this area to give it a try!
+                        </h4>
+                    </div>
+                </div>
+            </a>
+            <a data-toggle="modal" data-target="#palin" style="cursor: pointer">
+                <div class="row prettyBottom border rounded">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h2>Palindrome?</h2>
+                        <h4>
+                            A palindrome is a word or phrase that is spelled the same way fowards or backwards. Race Car is an example of a palindrome. Type in any phrase or word and see if it is a palindrome. You can type
+                            in any combination of capital letters with or without spaces. Click around here and give it a try.
+                        </h4>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <img src="~/Template/assets/img/glasses_comp.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </a>
+            <a data-toggle="modal" data-target="#sumOfAllFears" style="cursor: pointer">
+                <div class="row border rounded">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <img src="~/Template/assets/img/typing.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h2>Sum of All Fears</h2>
+                        <h4>
+                            The sum of all fears is a JS math exercise where you input several numbers into a list. Each number is labeled A through D, except the last number (k). This program evaluates all pairs
+                            of numbers in the list, checking to see if any two numbers add up to the input k. Click anywhere in this area to try it.
+                        </h4>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
